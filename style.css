@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #fbfbfb;
+  padding: 5rem;
+  min-height: 100vh;
+}
+
+.signup {
+  width: 110%;
+  height: 110%;
+  background-color: #f9faff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.signup__content, .signup__img {
+  width: calc(50% - 4rem);
+}
+.signup__img {
+  align-items: center;
+  transform: translateY(8rem);
+  max-height: 100vh;
+}
+.signup__heading {
+  font-weight: bold;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+  color: #291667;
+}
+.signup__caption {
+  color: #ff4eb5;
+  font-weight: bold;
+  margin-bottom: 4.5rem;
+  position: relative;
+  padding-left: 12rem;
+}
+.signup__caption:before {
+  content: "";
+  width: 10rem;
+  height: 2px;
+  background-color: #ff4eb5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+.signup-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 5rem;
+}
+.signup-social__item {
+  display: flex;
+  padding: 1rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  justify-content: center;
+  align-items: center;
+  color: #292828;
+  width: calc(50% - 0.9rem);
+}
+.signup-social__icon {
+  margin-right: 1rem;
+}
+.signup-form__label {
+  color: #292828;
+  display: inline-block;
+  margin-bottom: 1rem;
+  transform: translateX(1rem);
+}
+.signup-form__input {
+  padding: 1.5rem 1rem;
+  border: 1px solid #cac7c7;
+  background-color: #fafbff;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  width: 100%;
+  transition: all 0.25s linear;
+}
+.signup-form__input:focus {
+  background-color: white;
+  border-color: #fa327f;
+}
+.signup-form__input:focus + .signup-form__check {
+  background-color: #fa327f;
+}
+.signup-form__row {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.signup-form__row .signup-form__group {
+  width: calc(50% - 0.9rem);
+}
+.signup-form__term input {
+  display: none;
+}
+.signup-form__term input:checked + label::before {
+  border-color: #ff4eb5;
+  background-color: #ff4eb5;
+}
+.signup-form__term label {
+  position: relative;
+  padding-left: 3.5rem;
+  margin: 3rem 0 3rem 0;
+  display: inline-block;
+}
+.signup-form__term label::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fafbff;
+  border: 1px solid #dddada;
+  transition: all 0.3s linear;
+}
+.signup-form__submit {
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  border: 0;
+  border-radius: 3rem;
+  background-color: #fa327f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+  box-shadow: 0 10px 10px 0px rgba(250, 50, 127, 0.5);
+}
+.signup-form__validate {
+  position: relative;
+}
+.signup-form__validate .signup-form__input {
+  padding-right: 4.5rem;
+}
+.signup-form__check {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #3892f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.signup-form__ready {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+.signup-form__ready a {
+  color: #fa327f;
+}
+
+@media screen and (max-width: 1439px) {
+  .signup__content {
+    width: calc(58% - 1rem);
+  }
+  .signup__img {
+    width: calc(42% - 1rem);
+  }
+}
+@media screen and (max-width: 1279px) {
+  .signup__content {
+    width: 100%;
+  }
+  .signup__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  .signup {
+    padding: 1.5rem;
+  }
+  .signup-social {
+    flex-direction: column;
+  }
+  .signup-social__item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .signup-form__row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .signup-form__row .signup-form__group {
+    width: 100%;
+  }
+  .signup-form__group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
